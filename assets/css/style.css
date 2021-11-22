@@ -9,10 +9,22 @@
 body {
     font-family: 'Outfit', sans-serif;
     background-color: #0093CF;
-    display: flex;
+}
+
+#title {
+    margin-top: 200px;
+    margin-bottom: 3%;
+    text-align: center;
+    font-size: xxx-large;
+}
+
+#container {
+    height: 500px;
+    width: 500px;
+    background-color: #00CAFF;
+    margin: 0 auto;
     justify-content: center;
+    display: flex;
     align-items: center;
-    width: 100vw;
-    height: 100vh;
 }
 
