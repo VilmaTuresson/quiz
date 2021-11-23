@@ -48,3 +48,19 @@ body {
    font-size: x-large;
    border-radius: 6px;
 }
+
+#quiz_holder {
+    display: none;
+}
+
+#play {
+    background-color: #C5F8FF;
+    display: block;
+    margin: 0 auto;
+    margin-top: 25%;
+    top: 75px;
+    font-size: xxx-large;
+    width: 40%;
+    height: 20%;
+    border-radius: 6px;
+}
