@@ -1,21 +1,17 @@
 let startQuiz = document.getElementById('start_holder');
 let quizHolder = document.getElementById('quiz_holder');
 
-let questionIndex = 0;
+startQuiz.addEventListener('click', startFunc)
 
+let questionIndex = 0;
 
 let nextBtn = document.getElementById('next');
 nextBtn.addEventListener('click', startGame)
-
 
 function startFunc() {
     startQuiz.style.display = 'none'
     quizHolder.classList.remove('hidden')
 }
-
-startQuiz.addEventListener('click', startFunc)
-
-
 
 function startGame() {
     
@@ -71,3 +67,6 @@ let q = [
 
 startGame(question);
 
+function nextQ() {
+    for()
+}
