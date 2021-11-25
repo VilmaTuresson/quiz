@@ -49,10 +49,6 @@ body {
    border-radius: 6px;
 }
 
-#quiz_holder {
-    display: none;
-}
-
 #start {
     background-color: #C5F8FF;
     display: block;
@@ -65,4 +61,17 @@ body {
     border-radius: 6px;
     box-shadow: 0 0 12px 2px;
     overflow: hidden;
+}
+
+#next {
+    background-color: #C5F8FF;
+    font-size: xxx-large;
+    display: inline-block;
+    margin: 15% 35% 0 35%;
+    width: 30%;
+    border-radius: 6px;
+}
+
+.hidden {
+    display: none;
 }
