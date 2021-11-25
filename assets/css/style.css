@@ -11,6 +11,8 @@ body {
     background-color: #0093CF;
 }
 
+/* Quiz title & game container */
+
 #title {
     margin-top: 200px;
     margin-bottom: 3%;
@@ -29,25 +31,7 @@ body {
     max-width: 70%;
 }
 
-#question_holder {
-    margin: 0 auto;
-}
-
-#question {
-    text-align: center;
-    height: auto;
-    font-size: xx-large;
-}
-
-.option {
-   display: inline-block;
-   text-align: center;
-   width: 40%;
-   height: 35px;
-   margin: 40px 0 0 6%;
-   font-size: x-large;
-   border-radius: 6px;
-}
+/* Start frame */
 
 #start {
     background-color: #C5F8FF;
@@ -69,6 +53,28 @@ body {
     margin-top: 10%;
 }
 
+/* Question, Options & next btn */
+
+#question_holder {
+    margin: 0 auto;
+}
+
+#question {
+    text-align: center;
+    height: auto;
+    font-size: xx-large;
+}
+
+.option {
+    display: inline-block;
+    text-align: center;
+    width: 40%;
+    height: 35px;
+    margin: 40px 0 0 6%;
+    font-size: x-large;
+    border-radius: 6px;
+}
+
 #next {
     background-color: #C5F8FF;
     font-size: xxx-large;
@@ -80,4 +86,57 @@ body {
 
 .hidden {
     display: none;
+}
+
+/* Media quieries */
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+
+    #title {
+        font-size: xx-large;
+        margin-top: 50px;
+    }
+
+    #title i {
+        font-size: smaller;
+    }
+
+    #container {
+        width: 60%;
+        margin-top: 30px;
+    }
+
+    #start-text {
+        font-size: xx-large;
+    }
+
+    #start {
+        font-size: xx-large;
+        width: 100%;
+        text-align: center;
+        margin-top: 25%;
+    }
+
+    #question {
+        font-size: x-large;
+    }
+
+    .option {
+        font-size: larger;
+    }
+
+    #next {
+        font-size: xx-large;
+    }
+
+    #quiz_holder {
+        margin-top: 10%;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 769px) {
+
+    #title {
+        margin-top: 10%;
+    }
 }
