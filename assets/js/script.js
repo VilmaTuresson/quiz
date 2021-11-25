@@ -1,4 +1,4 @@
-let startQuiz = document.getElementById('start');
+let startQuiz = document.getElementById('start_holder');
 let quizHolder = document.getElementById('quiz_holder');
 
 function startFunc() {
