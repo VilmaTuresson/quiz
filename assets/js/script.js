@@ -1,42 +1,70 @@
-let startQuiz = document.getElementById('start_holder');
+let startQuiz = document.getElementById('start')
 let quizHolder = document.getElementById('quiz_holder');
-
-startQuiz.addEventListener('click', startFunc)
-
+let startContainer =  document.getElementById('start_holder');
 let questionIndex = 0;
-
+let options = document.getElementsByClassName('option');
 let nextBtn = document.getElementById('next');
-nextBtn.addEventListener('click', startGame)
 
+/* options.addEventListener('click', getUserChoice); */
+startQuiz.addEventListener('click', startFunc)
+nextBtn.addEventListener('click', nextQuestion)
+
+/**
+ * Hides start frame and shows question area
+ */
 function startFunc() {
-    startQuiz.style.display = 'none'
     quizHolder.classList.remove('hidden')
+    startContainer.classList.add('hidden')
+    startGame();
 }
 
+/**
+ * get question and option 
+ */
 function startGame() {
+    let currentQuestion = q[questionIndex]
+    displayQuestion(currentQuestion);
+} 
+
+/** go to next question */
+function nextQuestion() {
     
+    if (q.length > questionIndex + 1) {
+    questionIndex++;
+    }
+    currentQuestion = q[questionIndex];
+    displayQuestion(currentQuestion);
+}
+
+/**
+ * get question and options and return feedback in console
+ */
+function displayQuestion(question) {
     let questionGet = document.getElementById('question');
-    questionGet.textContent = q[questionIndex].question;
+    questionGet.textContent = question.question;
 
     let optionsGet = document.querySelectorAll('.option');
     optionsGet.forEach(function(element, index) {
+
         element.textContent = q[questionIndex].option[index];
 
         element.addEventListener('click', function() {
-            if(q.correctAnswer == index) {
+            answer = this.innerText;
+            console.log('click ' + this.innerText);
+            if(q[questionIndex].correctAnswer == answer) {
                 console.log('right')       
             } else {
                 console.log('wrong')
             }
         })
     });
-} 
+}
 
 let q = [
     { 
         question: 'Which English football team is called the Magpies?',
         option: ['Chelsea', 'Everton', 'Newcastle', 'Stroke'],
-        correctAnswer: 2
+        correctAnswer: 'Newcastle'
     }, 
     {
         question: 'Who was the first black tennis player to win the singles at wimbledon?',
@@ -50,7 +78,7 @@ let q = [
     },
     {
         question: 'Which of the following hockey teams has not played in the NHL?',
-        option: ['New York Americans', 'Kansas City Scouts', 'Cleveland Hornets', 'California Golden Seals'],
+        option: ['New York Americans', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
         correctAnswer: 2
     },
     {
@@ -65,8 +93,4 @@ let q = [
     }
 ]
 
-startGame(question);
 
-function nextQ() {
-    for()
-}
