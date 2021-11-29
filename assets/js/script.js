@@ -69,27 +69,27 @@ let q = [
     {
         question: 'Who was the first black tennis player to win the singles at wimbledon?',
         option: ['Arthur Ashe', 'Althea Gibson', 'James Blake', 'Venus Williams'],
-        correctAnswer: 1
+        correctAnswer: 'Althea Gibson'
     },
     {
         question: 'Which year did Matthew Webb swim the English channel?',
         option: ['1875', '1745', '1911', '1933'],
-        correctAnswer: 0
+        correctAnswer: '1875'
     },
     {
         question: 'Which of the following hockey teams has not played in the NHL?',
         option: ['New York Americans', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
-        correctAnswer: 2
+        correctAnswer: 'Cleveland Hornets'
     },
     {
         question: 'Which Formula 1 driver is the movie Rush about?',
         option: ['Ayrton Senna', 'Nigel Mansell', 'Jackie Stewart', 'Niki Lauda'],
-        correctAnswer: 3
+        correctAnswer: 'Niki Lauda'
     },
     {
         question: 'Which golf player was called "white shark"?',
         option: ['Gary Player', 'Greg Norman', 'Jim Furyk', 'Bernhard Langer'],
-        correctAnswer: 1
+        correctAnswer: 'Greg Norman'
     }
 ]
 
