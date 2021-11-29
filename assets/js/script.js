@@ -4,6 +4,7 @@ let startContainer =  document.getElementById('start_holder');
 let questionIndex = 0;
 let options = document.getElementsByClassName('option');
 let nextBtn = document.getElementById('next');
+let scoreHolder = document.getElementById('score_holder');
 
 /* options.addEventListener('click', getUserChoice); */
 startQuiz.addEventListener('click', startFunc)
@@ -14,7 +15,7 @@ nextBtn.addEventListener('click', nextQuestion)
  */
 function startFunc() {
     quizHolder.classList.remove('hidden')
-    startContainer.classList.add('hidden')
+    startContainer.classList.add('hidden') 
     startGame();
 }
 
@@ -28,9 +29,10 @@ function startGame() {
 
 /** go to next question */
 function nextQuestion() {
-    
     if (q.length > questionIndex + 1) {
     questionIndex++;
+    } else {
+        displayScore();
     }
     currentQuestion = q[questionIndex];
     displayQuestion(currentQuestion);
@@ -57,7 +59,13 @@ function displayQuestion(question) {
             }
         })
     });
+   
 }
+
+function displayScore() {
+    quizHolder.classList.add('hidden')
+    scoreHolder.classList.remove('hidden');
+};
 
 let q = [
     { 
