@@ -50,7 +50,6 @@ function displayQuestion(question) {
 
         element.addEventListener('click', function() {
             answer = this.innerText;
-            console.log('click ' + this.innerText);
             if(q[questionIndex].correctAnswer == answer) {
                 console.log('right')       
             } else {
