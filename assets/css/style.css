@@ -43,7 +43,7 @@ body {
     margin: 0 auto;
     margin-top: 15%;
     top: 75px;
-    font-size: xxx-large;
+    font-size: 2.5rem;
     width: 40%;
     height: 20%;
     border-radius: 6px;
@@ -86,7 +86,7 @@ body {
 
 #next {
     background-color: #C5F8FF;
-    font-size: xxx-large;
+    font-size: 2.5rem;
     display: inline-block;
     margin: 15% 35% 0 35%;
     width: 30%;
@@ -145,7 +145,7 @@ body {
     }
 
     #start {
-        font-size: xx-large;
+        font-size: 2rem;
         width: 100%;
         text-align: center;
         margin-top: 25%;
@@ -178,7 +178,7 @@ body {
     }
 
     #next {
-        font-size: larger;
+        font-size: 1.5rem;
         height: fit-content;
         width: fit-content;
         padding: 5px;
@@ -193,7 +193,7 @@ body {
         font-size: xx-large;
     }
     #again-btn {
-        font-size: x-large;
+        font-size: 1.5rem;
         width: 80%;
     }
 
@@ -232,7 +232,7 @@ body {
     }
 
     #next {
-        font-size: x-large;
+        font-size: 1.5rem;
         height: fit-content;
         width: fit-content;
         padding: 5px;
@@ -248,14 +248,14 @@ body {
         font-size: xx-large;
     }
     #again-btn {
-        font-size: x-large;
+        font-size: 1.5rem;
         width: 80%;
     }
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
     #again-btn {
-        font-size: xx-large;
+        font-size: 2rem;
         width: 50%;
     }
 }
