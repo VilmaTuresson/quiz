@@ -105,20 +105,22 @@ body {
 }
 
 #score {
-    font-size: xx-large;
+    font-size: xxx-large;
 }
 
 #again-btn {
-    font-size: xx-large;
+    font-size: 2.4rem;
     margin-top: 20%;
     width: 40%;
     background-color: #C5F8FF;
     border-radius: 6px;
+    padding: 5px;
 }
 
 #again-btn:hover {
     border: 2px solid black;
 }
+
 /* Media quieries */
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
@@ -148,26 +150,112 @@ body {
         margin-top: 25%;
     }
 
+    #question_holder {
+        margin-top: 5px;
+        text-align: center;
+    }
+
     #question {
-        font-size: x-large;
+        font-size: larger;
+    }
+
+    #option_holder {
+        text-align: center;
+        margin-top: 20px;
     }
 
     .option {
         font-size: larger;
+        width: 70%;
+        height: 50px;
+        margin-top: 10px;
+        padding: 4px;
+    }
+
+    #next_holder {
+        text-align: center;
     }
 
     #next {
+        font-size: larger;
+        height: fit-content;
+        width: fit-content;
+        padding: 5px;
+    }
+
+    #score_holder {
+        padding: 0%;
+        margin-top: 20%;
+    }
+
+    #score {
         font-size: xx-large;
     }
-
-    #quiz_holder {
-        margin-top: 10%;
+    #again-btn {
+        font-size: x-large;
+        width: 80%;
     }
+
 }
 
-@media only screen and (min-width: 481px) and (max-width: 769px) {
+@media only screen and (min-width: 481px) and (max-width: 768px) {
 
     #title {
         margin-top: 10%;
     }
+
+    #question_holder {
+        margin-top: 5px;
+        text-align: center;
+    }
+
+    #question {
+        font-size: x-large;
+    }
+
+    #option_holder {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .option {
+        font-size: x-large;
+        width: 70%;
+        height: 50px;
+        margin-top: 10px;
+        padding: 4px;
+    }
+
+    #next_holder {
+        text-align: center;
+    }
+
+    #next {
+        font-size: x-large;
+        height: fit-content;
+        width: fit-content;
+        padding: 5px;
+        margin: 5% 0 4% 0;
+    }
+
+    #score_holder {
+        padding: 0%;
+        margin-top: 20%;
+    }
+
+    #score {
+        font-size: xx-large;
+    }
+    #again-btn {
+        font-size: x-large;
+        width: 80%;
+    }
 }
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    #again-btn {
+        font-size: xx-large;
+        width: 50%;
+    }
+}
+
