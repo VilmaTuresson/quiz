@@ -74,13 +74,10 @@ This site was deployed via github pages. Executed as follows
 
 **Content**
 
- TEXT LÄNK fontawsome
+- Icons on the page where taken from [Font Awsome](https://fontawesome.com/)
+- The fonts on the page where taken from [Google Fonts](https://fonts.google.com/)
+- The code for the ‘wrong’ and ‘right’ alerts are taken from SweetAlerts. The values were changed from ‘good job!’ to ‘Right Answer!’ and ‘oops..’ to ‘Wrong Answer’ The code is clearly commented at lines 50 and 56 in the script.js file. Here is a link to the website: [Sweet Alert](https://sweetalert2.github.io/?fbclid=IwAR19dDstcUcZP2gq-Abq9_cDAauS63J7QY-634dpZskhLsyx9G5IM-kLb28#examples)
 
-TEXT LÄNK google fonts
-
-TEXT LÄNK sweetalerts
-
-INSPO YOUTUBE
 
 
 
