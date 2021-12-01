@@ -1,6 +1,6 @@
 # Sports Quiz
 
-This sports quiz is made to entertain. It is targeted towards anyone interested in sports! Each question in this quiz is about a different type of sport. With a straightforward design and clear instructions this game is easy to run through and start over again. 
+This sports quiz is made to entertain. It is targeted towards anyone interested in sports! Each question in this quiz is about a different type of sport. With a straightforward design and clear instructions this game is easy to run through and start over again. [Sports Quiz](https://vilmaturesson.github.io/quiz/)
 
 ![responsive-picture](https://user-images.githubusercontent.com/89077706/144298587-2c5c3827-dca9-4ff1-b031-ecd8ace07f75.png)
 
@@ -66,7 +66,7 @@ This site was deployed via github pages. Executed as follows
 - Navigate to the setings, trough the repository
 - Click the link under github pages
 - Choose main/master branch and save
-- The page will then refreash and and a live link to the depolyed site will be presented. Here is the deployed site: 
+- The page will then refreash and and a live link to the depolyed site will be presented. Live link to the site can be found here:
 
 [Sports Quiz](https://vilmaturesson.github.io/quiz/)
 
