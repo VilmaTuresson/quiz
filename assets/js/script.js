@@ -12,7 +12,7 @@ let score = 0;
 
 startQuiz.addEventListener('click', startFunc)
 nextBtn.addEventListener('click', nextQuestion)
-playAgain.addEventListener('click', startFunc)
+playAgain.addEventListener('click', startGame)
 
 /**
  * Hides start frame and shows question area
