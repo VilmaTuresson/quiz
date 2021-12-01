@@ -4,6 +4,7 @@ let scoreHolder = document.getElementById('score_holder');
 let startContainer =  document.getElementById('start_holder');
 let options = document.getElementsByClassName('option');
 let nextBtn = document.getElementById('next');
+let scoreResult = document.getElementById('score_num');
 let questionIndex = 0;
 let score = 0;
 
@@ -74,6 +75,7 @@ function displayQuestion(question) {
 function displayScore() {
     quizHolder.classList.add('hidden')
     scoreHolder.classList.remove('hidden');
+    scoreResult.innerText = score;
 };
 
 let q = [
