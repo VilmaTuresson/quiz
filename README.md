@@ -31,7 +31,7 @@ This sports quiz is made to entertain. It is targeted towards anyone interested 
 ![Correct-alert](https://user-images.githubusercontent.com/89077706/144297955-cc5d4352-2e1c-4722-bfd8-b4422b5b95f6.png)
 
 - When an incorrect answer is clicked, an alert will pop up and tell the user that the answer was wrong and display a symbol for error. There is also a button to close down the alert.
-![Incorrect-alert](https://user-images.githubusercontent.com/89077706/144298003-505d1218-4e49-4502-9dc5-f323059c82b5.png)
+![wrong-alert](https://user-images.githubusercontent.com/89077706/144306841-83621e16-7268-48e6-b136-48cfa623b585.png)
 
 **The score frame**
 
