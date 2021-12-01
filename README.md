@@ -1,40 +1,44 @@
 # Sports Quiz
 
-IMG
-
 This sports quiz is 
 
-## exsisting feautures
+![responsive-picture](https://user-images.githubusercontent.com/89077706/144298587-2c5c3827-dca9-4ff1-b031-ecd8ace07f75.png)
+
+## Exsisting feautures
 
 **The title**
 
 The title *Sports Quiz* is clearly displayed over the game at all POINTS of the website. It contains an icon taken from LINK
 
-IMG
+![title](https://user-images.githubusercontent.com/89077706/144297750-80c9a702-6789-4d7d-8a85-7dc18ae25db0.png)
 
 **The start frame**
 
 TEXT
 
-IMG
+![start-frame](https://user-images.githubusercontent.com/89077706/144297866-60acd0e3-9616-4d3b-90a9-6bda2c1a87de.png)
 
 **The game**
 
 TEXT
 
-IMG
+![game-frame](https://user-images.githubusercontent.com/89077706/144297917-e2ee9471-43a0-43f9-92af-8ba511437bb1.png)
 
 **The right and wrong alerts**
 
 TEXT 
 
-IMG IMG
+- The alert for diplaying correct answer
+![Correct-alert](https://user-images.githubusercontent.com/89077706/144297955-cc5d4352-2e1c-4722-bfd8-b4422b5b95f6.png)
+
+- The alert for siplaying incorrect answer
+![Incorrect-alert](https://user-images.githubusercontent.com/89077706/144298003-505d1218-4e49-4502-9dc5-f323059c82b5.png)
 
 **The score frame**
 
 TEXT
 
-IMG
+![score-frame](https://user-images.githubusercontent.com/89077706/144298044-1c7eb44a-8e21-4170-8ec3-0dee446d8361.png)
 
 ## Testing
 
@@ -46,7 +50,9 @@ CSS - LÄNK
 
 JS - LÄNK
 
-LIGHTHOUSE -IMG
+LIGHTHOUSE 
+
+![lighthouse-testing](https://user-images.githubusercontent.com/89077706/144297517-27f15abb-e8cd-4451-b3dc-e7cc72de3fd0.png)
 
 ## Deplyment 
 
