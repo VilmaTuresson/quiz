@@ -1,14 +1,14 @@
 let startQuiz = document.getElementById('start')
 let quizHolder = document.getElementById('quiz_holder');
+let scoreHolder = document.getElementById('score_holder');
 let startContainer =  document.getElementById('start_holder');
-let questionIndex = 0;
 let options = document.getElementsByClassName('option');
 let nextBtn = document.getElementById('next');
-let scoreHolder = document.getElementById('score_holder');
+let questionIndex = 0;
 
-/* options.addEventListener('click', getUserChoice); */
 startQuiz.addEventListener('click', startFunc)
 nextBtn.addEventListener('click', nextQuestion)
+/* options.addEventListener('click', getUserChoice); */
 
 /**
  * Hides start frame and shows question area
@@ -59,7 +59,10 @@ function displayQuestion(question) {
             }
         })
     });
-   
+}
+
+function checkScore() {
+    
 }
 
 function displayScore() {
