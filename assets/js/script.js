@@ -5,6 +5,7 @@ let startContainer =  document.getElementById('start_holder');
 let options = document.getElementsByClassName('option');
 let nextBtn = document.getElementById('next');
 let questionIndex = 0;
+let score = 0;
 
 startQuiz.addEventListener('click', startFunc)
 nextBtn.addEventListener('click', nextQuestion)
@@ -53,16 +54,21 @@ function displayQuestion(question) {
         element.addEventListener('click', function() {
             answer = this.innerText;
             if(q[questionIndex].correctAnswer == answer) {
-                console.log('right')       
+                score++ 
+                /* code from sweetAlert with changed title value line 59 to 62*/
+                Swal.fire({
+                    title: 'Right Answer!',
+                    icon: 'success',
+                  })
             } else {
-                console.log('wrong')
+                /* code from sweetAlert with changed title value line 65 to 68*/
+                Swal.fire({
+                    title: 'Wrong Answer',
+                    icon: 'error',
+                  })
             }
         })
     });
-}
-
-function checkScore() {
-    
 }
 
 function displayScore() {
