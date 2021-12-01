@@ -1,6 +1,6 @@
 # Sports Quiz
 
-This sports quiz is 
+This sports quiz is made to entertain. It is targeted towards anyone interested in sports! Each question in this quiz is about a different type of sport. With a straightforward design and clear instructions this game is easy to run through and start over again. 
 
 ![responsive-picture](https://user-images.githubusercontent.com/89077706/144298587-2c5c3827-dca9-4ff1-b031-ecd8ace07f75.png)
 
