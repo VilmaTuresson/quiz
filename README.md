@@ -59,7 +59,7 @@ No errors or warning were returned when passing through the official (Jigsaw) Va
 
 ![lighthouse-testing](https://user-images.githubusercontent.com/89077706/144297517-27f15abb-e8cd-4451-b3dc-e7cc72de3fd0.png)
 
-## Deplyment 
+## Deployment 
 
 This site was deployed via github pages. Executed as follows
 
