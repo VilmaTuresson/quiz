@@ -1,18 +1,17 @@
 let startQuiz = document.getElementById('start')
 let quizHolder = document.getElementById('quiz_holder');
 let scoreHolder = document.getElementById('score_holder');
-let startContainer =  document.getElementById('start_holder');
+let startContainer = document.getElementById('start_holder');
 let options = document.getElementsByClassName('option');
-let nextBtn = document.getElementById('next');
-let scoreFrame =document.getElementById('score_holder');
+let scoreFrame = document.getElementById('score_holder');
 let scoreResult = document.getElementById('score_num');
 let playAgain = document.getElementById('again-btn');
 let questionIndex = 0;
 let score = 0;
 
 startQuiz.addEventListener('click', startFunc)
-nextBtn.addEventListener('click', nextQuestion)
-playAgain.addEventListener('click', startGame)
+/* nextBtn.addEventListener('click', nextQuestion) TA BORT */
+playAgain.addEventListener('click', startFrame)
 
 /**
  * Hides start frame and shows question area
@@ -29,44 +28,36 @@ function startFunc() {
 function startGame() {
     let currentQuestion = q[questionIndex]
     displayQuestion(currentQuestion);
-} 
+}
 
-/**
- * get question and options and return feedback in console
- */
+function validateAnswer() {
+    answer = this.innerText;
+    if (q[questionIndex].correctAnswer == answer) {
+        score++;
+        this.classList.add('correct');
+    } else {
+        this.classList.add('incorrect');
+    }
+    setTimeout(nextQuestion, 1000);
+}
+
 function displayQuestion(question) {
     let questionGet = document.getElementById('question');
     questionGet.textContent = question.question;
 
     let optionsGet = document.querySelectorAll('.option');
     optionsGet.forEach(function(element, index) {
-
+        element.classList.remove('correct');
+        element.classList.remove('incorrect');
         element.textContent = q[questionIndex].option[index];
-
-        element.addEventListener('click', function() {
-            answer = this.innerText;
-            if(q[questionIndex].correctAnswer == answer) {
-                score++ 
-                /* code from sweetAlert with changed title value line 59 to 62 */
-                Swal.fire({
-                    title: 'Right Answer!',
-                    icon: 'success',
-                  })
-            } else {
-                /* code from sweetAlert with changed title value line 65 to 68 */
-                Swal.fire({
-                    title: 'Wrong Answer',
-                    icon: 'error',
-                  })
-            }
-        })
+        element.addEventListener('click', validateAnswer)
     });
 }
 
 /** go to next question */
 function nextQuestion() {
     if (q.length > questionIndex + 1) {
-    questionIndex++;
+        questionIndex++;
     } else {
         displayScore();
     }
@@ -87,17 +78,18 @@ function displayScore() {
  * go back to start frame
  */
 function startFrame() {
+    quizHolder.classList.remove('hidden')
+    scoreHolder.classList.add('hidden');
     questionIndex = 0;
     score = 0;
     startGame();
 }
 
-let q = [
-    { 
+let q = [{
         question: 'Which English football team is called the Magpies?',
         option: ['Chelsea', 'Everton', 'Newcastle', 'Stroke'],
         correctAnswer: 'Newcastle'
-    }, 
+    },
     {
         question: 'Who was the first black tennis player to win the singles at wimbledon?',
         option: ['Arthur Ashe', 'Althea Gibson', 'James Blake', 'Venus Williams'],
@@ -124,5 +116,3 @@ let q = [
         correctAnswer: 'Greg Norman'
     }
 ]
-
-
