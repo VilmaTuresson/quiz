@@ -1,4 +1,5 @@
 let startQuiz = document.getElementById('start')
+let rulesBtn = document.getElementById('rules')
 let quizHolder = document.getElementById('quiz_holder');
 let scoreHolder = document.getElementById('score_holder');
 let startContainer = document.getElementById('start_holder');
@@ -9,9 +10,14 @@ let playAgain = document.getElementById('again-btn');
 let questionIndex = 0;
 let score = 0;
 
-startQuiz.addEventListener('click', startFunc)
+startQuiz.addEventListener('click', startFunc);
 /* nextBtn.addEventListener('click', nextQuestion) TA BORT */
-playAgain.addEventListener('click', startFrame)
+playAgain.addEventListener('click', startFrame);
+rulesBtn .addEventListener('click', rulesAlert);
+
+function rulesAlert() {
+    alert('When you start the game you will be provided with a question and four options for answers. When you click the option that you think is the right answer the option will display in a green color if correct and in a red color if incorrect. When the last question is answered you will be able to see what you scored on the quiz and how long it took you to complete it. And of course you can play the quiz again!');
+}
 
 /**
  * Hides start frame and shows question area
