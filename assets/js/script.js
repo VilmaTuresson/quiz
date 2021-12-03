@@ -15,10 +15,10 @@ playAgain.addEventListener('click', startFrame);
 rulesBtn.addEventListener('click', rulesAlert);
 
 /**
- * Sets alert with game instuctions
+ * Sets alert with game instructions
  */
 function rulesAlert() {
-    alert('When you start the game you will be provided with a question and four options for answers. When you click the option that you think is the right answer the option will display in a green color if correct and in a red color if incorrect. When the last question is answered you will be able to see what you scored on the quiz and of course you can play the quiz again!');
+    alert('When you start the game you will be provided with a question and four options for answers. When you click the option that you think is the right answer the option will display in green color if correct and in red color if incorrect. When the last question is answered, you will be able to see what you scored on the quiz and of course, you can play the quiz again!');
 }
 
 /**
@@ -39,7 +39,7 @@ function startGame() {
 }
 
 /**
- * Checks answer, gives feedback, add score if correct and sets next question
+ * Checks answer, gives feedback, add score if correct, and sets next question
  */
 function validateAnswer() {
     answer = this.innerText;
@@ -107,7 +107,7 @@ let q = [{
         correctAnswer: 'Newcastle'
     },
     {
-        question: 'Who was the first black tennis player to win the singles at wimbledon?',
+        question: 'Who was the first black tennis player to win the singles at Wimbledon?',
         option: ['Arthur Ashe', 'Althea Gibson', 'James Blake', 'Venus Williams'],
         correctAnswer: 'Althea Gibson'
     },
@@ -118,7 +118,7 @@ let q = [{
     },
     {
         question: 'Which of the following hockey teams has not played in the NHL?',
-        option: ['Seattle kraken', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
+        option: ['Seattle Kraken', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
         correctAnswer: 'Cleveland Hornets'
     },
     {
