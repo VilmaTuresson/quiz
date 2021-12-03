@@ -3,10 +3,10 @@ let rulesBtn = document.getElementById('rules');
 let quizHolder = document.getElementById('quiz_holder');
 let scoreHolder = document.getElementById('score_holder');
 let startContainer = document.getElementById('start_holder');
-let options = document.getElementsByClassName('option');
-let scoreFrame = document.getElementById('score_holder');
 let scoreResult = document.getElementById('score_num');
 let playAgain = document.getElementById('again-btn');
+let answer;
+let currentQuestion;
 let questionIndex = 0;
 let score = 0;
 
