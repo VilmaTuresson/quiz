@@ -11,7 +11,7 @@ body {
     background-color: #0093CF;
 }
 
-/* Quiz title & game container */
+/* Quiz title */
 
 #title {
     margin-top: 150px;
@@ -19,6 +19,8 @@ body {
     text-align: center;
     font-size: xxx-large;
 }
+
+/* Game container */
 
 #container {
     height: 400px;
@@ -70,7 +72,7 @@ body {
     border: 2px solid black;
 }
 
-/* Question, Options & next btn */
+/* Question and options */
 
 #question_holder {
     margin: 0 auto;
@@ -86,9 +88,9 @@ body {
     display: inline-block;
     text-align: center;
     width: 40%;
-    height: 35px;
-    margin: 40px 0 0 6%;
-    font-size: x-large;
+    height: 50px;
+    margin: 10% 0 0 6%;
+    font-size: 1.5rem;
     border-radius: 6px;
     background-color: white;
 }
@@ -103,19 +105,6 @@ body {
 
 .incorrect {
     background-color: red;
-}
-
-#next {
-    background-color: #C5F8FF;
-    font-size: 2.5rem;
-    display: inline-block;
-    margin: 15% 35% 0 35%;
-    width: 30%;
-    border-radius: 6px;
-}
-
-#next:hover {
-    border: 2px solid black;
 }
 
 /* scores and 'play again' button */
@@ -172,6 +161,19 @@ body {
         margin-top: 25%;
     }
 
+    #rules {
+        height: fit-content;
+        width: fit-content;
+        padding: 4px;
+        font-size: 1rem;
+        border: 1px solid black
+    }
+
+    #quiz_holder {
+        height: 400px;
+        width: 100%;
+    }
+
     #question_holder {
         margin-top: 5px;
         text-align: center;
@@ -184,25 +186,16 @@ body {
     #option_holder {
         text-align: center;
         margin-top: 20px;
+        width: 100%;
     }
 
     .option {
         font-size: larger;
-        width: 70%;
-        height: 50px;
-        margin-top: 10px;
+        height: 40px;
+        margin-top: 10%;
         padding: 4px;
-    }
-
-    #next_holder {
-        text-align: center;
-    }
-
-    #next {
-        font-size: 1.5rem;
-        height: fit-content;
-        width: fit-content;
-        padding: 5px;
+        width: 100%;
+        margin-left: 0;
     }
 
     #score_holder {
@@ -213,6 +206,7 @@ body {
     #score {
         font-size: xx-large;
     }
+
     #again-btn {
         font-size: 1.5rem;
         width: 80%;
@@ -226,6 +220,20 @@ body {
         margin-top: 10%;
     }
 
+    #start {
+        width: 50%;
+    }
+
+    #rules {
+        height: fit-content;
+        width: fit-content;
+        padding: 4px;
+        font-size: 1rem;
+        border: 1px solid black;
+        margin-top: 10%;
+    
+    }
+
     #question_holder {
         margin-top: 5px;
         text-align: center;
@@ -242,22 +250,11 @@ body {
 
     .option {
         font-size: x-large;
-        width: 70%;
-        height: 50px;
-        margin-top: 10px;
+        width: 100%;
+        height: 45px;
+        margin-top: 7.5%;
         padding: 4px;
-    }
-
-    #next_holder {
-        text-align: center;
-    }
-
-    #next {
-        font-size: 1.5rem;
-        height: fit-content;
-        width: fit-content;
-        padding: 5px;
-        margin: 5% 0 4% 0;
+        margin-left: 0;
     }
 
     #score_holder {
@@ -268,6 +265,7 @@ body {
     #score {
         font-size: xx-large;
     }
+
     #again-btn {
         font-size: 1.5rem;
         width: 80%;
@@ -275,9 +273,19 @@ body {
 }
 
 @media only screen and (min-width: 769px) and (max-width: 1024px) {
+
     #again-btn {
         font-size: 2rem;
         width: 50%;
     }
-}
 
+    #option_holder {
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    .option {
+        width: 40%;
+        margin: 0 2.5% 4% 2.5%;
+    }
+}

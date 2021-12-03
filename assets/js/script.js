@@ -118,7 +118,7 @@ let q = [{
     },
     {
         question: 'Which of the following hockey teams has not played in the NHL?',
-        option: ['New York Americans', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
+        option: ['Seattle kraken', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
         correctAnswer: 'Cleveland Hornets'
     },
     {
