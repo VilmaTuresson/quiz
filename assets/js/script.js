@@ -18,7 +18,7 @@ rulesBtn.addEventListener('click', rulesAlert);
  * Sets alert with game instuctions
  */
 function rulesAlert() {
-    alert('When you start the game you will be provided with a question and four options for answers. When you click the option that you think is the right answer the option will display in a green color if correct and in a red color if incorrect. When the last question is answered you will be able to see what you scored on the quiz and how long it took you to complete it. And of course you can play the quiz again!');
+    alert('When you start the game you will be provided with a question and four options for answers. When you click the option that you think is the right answer the option will display in a green color if correct and in a red color if incorrect. When the last question is answered you will be able to see what you scored on the quiz and of course you can play the quiz again!');
 }
 
 /**
