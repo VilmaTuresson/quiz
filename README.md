@@ -37,6 +37,7 @@ The site works as expected when tested on diffrent browsers (chrome, firefox, sa
 - Javascript
 
 No errors or warning were returned when passing through the JShint validator.
+[JSHint Validator Result](https://jshint.com/)
 
 - HTML
 
