@@ -2,7 +2,7 @@
 
 This sports quiz is made to entertain. It is targeted towards anyone interested in sports! Each question in this quiz is about a different type of sport. With a straightforward design and clear instructions this game is easy to run through and start over again. [Sports Quiz](https://vilmaturesson.github.io/quiz/)
 
-![responsive-picture](https://user-images.githubusercontent.com/89077706/144298587-2c5c3827-dca9-4ff1-b031-ecd8ace07f75.png)
+![responsiveness](https://user-images.githubusercontent.com/89077706/144608789-0da435dd-267c-409f-8964-8d5876afec7a.png)
 
 ## Exsisting feautures
 
@@ -16,28 +16,19 @@ This sports quiz is made to entertain. It is targeted towards anyone interested 
 
 - The start frame is opened with a small message that encourages the player to start the game and a button that will display the first question.
 
-![start-frame](https://user-images.githubusercontent.com/89077706/144297866-60acd0e3-9616-4d3b-90a9-6bda2c1a87de.png)
+![start-frame](https://user-images.githubusercontent.com/89077706/144608819-297692cb-2e62-4457-ab3f-a2994b48b104.png)
 
 **The game**
 
 - The question is centered at the top of the game with four options for answers. The Options are styled to be similar to each other and to fit their content. At the bottom of the game there is a next-button that will take the user to the next question. All buttons will display a border when hovered over, on a computer and   when clicked, on a tablet.
 
-![game-frame](https://user-images.githubusercontent.com/89077706/144297917-e2ee9471-43a0-43f9-92af-8ba511437bb1.png)
-
-**The right and wrong alerts**
-
-- When a correct answer is clicked, an alert will pop up and tell the user that the answer was right and display a symbol for success. There is also a button to close down the alert.
-
-![Correct-alert](https://user-images.githubusercontent.com/89077706/144297955-cc5d4352-2e1c-4722-bfd8-b4422b5b95f6.png)
-
-- When an incorrect answer is clicked, an alert will pop up and tell the user that the answer was wrong and display a symbol for error. There is also a button to close down the alert.
-![wrong-alert](https://user-images.githubusercontent.com/89077706/144306841-83621e16-7268-48e6-b136-48cfa623b585.png)
+![game-frame](https://user-images.githubusercontent.com/89077706/144608847-fd4200f1-f6d8-4eb0-a9fc-0fa450354f92.png)
 
 **The score frame**
 
 When the last question is answered feedback will be presented. It will state how many correct answers the user got out of six possible. Underneath there is a button for the player to go back to the start frame and re-play the game.
 
-![score-frame](https://user-images.githubusercontent.com/89077706/144298044-1c7eb44a-8e21-4170-8ec3-0dee446d8361.png)
+![score-frame](https://user-images.githubusercontent.com/89077706/144608878-7d370196-b37d-4a54-a8a1-6efb66236de8.png)
 
 ## Testing
 
