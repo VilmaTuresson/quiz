@@ -1,5 +1,5 @@
-let startQuiz = document.getElementById('start')
-let rulesBtn = document.getElementById('rules')
+let startQuiz = document.getElementById('start');
+let rulesBtn = document.getElementById('rules');
 let quizHolder = document.getElementById('quiz_holder');
 let scoreHolder = document.getElementById('score_holder');
 let startContainer = document.getElementById('start_holder');
@@ -11,10 +11,12 @@ let questionIndex = 0;
 let score = 0;
 
 startQuiz.addEventListener('click', startFunc);
-/* nextBtn.addEventListener('click', nextQuestion) TA BORT */
 playAgain.addEventListener('click', startFrame);
-rulesBtn .addEventListener('click', rulesAlert);
+rulesBtn.addEventListener('click', rulesAlert);
 
+/**
+ * Sets alert with game instuctions
+ */
 function rulesAlert() {
     alert('When you start the game you will be provided with a question and four options for answers. When you click the option that you think is the right answer the option will display in a green color if correct and in a red color if incorrect. When the last question is answered you will be able to see what you scored on the quiz and how long it took you to complete it. And of course you can play the quiz again!');
 }
@@ -23,19 +25,22 @@ function rulesAlert() {
  * Hides start frame and shows question area
  */
 function startFunc() {
-    startContainer.classList.add('hidden')
-    quizHolder.classList.remove('hidden')
+    startContainer.classList.add('hidden');
+    quizHolder.classList.remove('hidden');
     startGame();
 }
 
 /**
- * get question and option 
+ * Get first question and options
  */
 function startGame() {
-    let currentQuestion = q[questionIndex]
+    let currentQuestion = q[questionIndex];
     displayQuestion(currentQuestion);
 }
 
+/**
+ * Checks answer, gives feedback, add score if correct and sets next question
+ */
 function validateAnswer() {
     answer = this.innerText;
     if (q[questionIndex].correctAnswer == answer) {
@@ -47,20 +52,25 @@ function validateAnswer() {
     setTimeout(nextQuestion, 1000);
 }
 
+/**
+ * Gets new the question and corresponding options
+ */
 function displayQuestion(question) {
     let questionGet = document.getElementById('question');
     questionGet.textContent = question.question;
 
     let optionsGet = document.querySelectorAll('.option');
-    optionsGet.forEach(function(element, index) {
+    optionsGet.forEach(function (element, index) {
         element.classList.remove('correct');
         element.classList.remove('incorrect');
         element.textContent = q[questionIndex].option[index];
-        element.addEventListener('click', validateAnswer)
+        element.addEventListener('click', validateAnswer);
     });
 }
 
-/** go to next question */
+/**
+ * Iterates q array
+ */
 function nextQuestion() {
     if (q.length > questionIndex + 1) {
         questionIndex++;
@@ -72,19 +82,19 @@ function nextQuestion() {
 }
 
 /**
- * display score frame
+ * Display score frame
  */
 function displayScore() {
-    quizHolder.classList.add('hidden')
+    quizHolder.classList.add('hidden');
     scoreHolder.classList.remove('hidden');
     scoreResult.innerText = score;
-};
+}
 
 /**
- * go back to start frame
+ * Go back to start frame
  */
 function startFrame() {
-    quizHolder.classList.remove('hidden')
+    quizHolder.classList.remove('hidden');
     scoreHolder.classList.add('hidden');
     questionIndex = 0;
     score = 0;
@@ -121,4 +131,4 @@ let q = [{
         option: ['Gary Player', 'Greg Norman', 'Jim Furyk', 'Bernhard Langer'],
         correctAnswer: 'Greg Norman'
     }
-]
+];
