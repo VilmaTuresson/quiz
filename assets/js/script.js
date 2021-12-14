@@ -1,5 +1,6 @@
 let startQuiz = document.getElementById('start');
 let rulesBtn = document.getElementById('rules');
+let rulesDiv = document.getElementById('rules-div');
 let quizHolder = document.getElementById('quiz_holder');
 let scoreHolder = document.getElementById('score_holder');
 let startContainer = document.getElementById('start_holder');
@@ -11,17 +12,18 @@ let questionIndex = 0;
 let score = 0;
 let currentIndex = 0;
 let usedIndexes = [];
-let quizQuestionNumber = 6;
+const quizQuestionNumber = 6;
 
 startQuiz.addEventListener('click', startFunc);
 playAgain.addEventListener('click', startFrame);
-rulesBtn.addEventListener('click', rulesAlert);
+rulesBtn.addEventListener('click', showRules);
 
 /**
- * Sets alert with game instructions
+ * Shows text with game instructions
  */
-function rulesAlert() {
-    alert('When you start the game you will be provided with a question and four options for answers. When you click the option that you think is the right answer the option will display in green color if correct and in red color if incorrect. When the last question is answered, you will be able to see what you scored on the quiz and of course, you can play the quiz again!');
+function showRules() {
+    rulesDiv.classList.remove('hidden');
+    rulesBtn.style.display = 'none';
 }
 
 /**
@@ -163,7 +165,8 @@ let q = [{
         option: ['1875', '1745', '1911', '1933'],
         correctAnswer: '1875'
     },
-    {   question: 'Which of the following hockey teams has not played in the NHL? 2',
+    {   
+        question: 'Which of the following hockey teams has not played in the NHL? 2',
         option: ['Seattle Kraken', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
         correctAnswer: 'Cleveland Hornets'
     },
