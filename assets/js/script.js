@@ -9,6 +9,9 @@ let answer;
 let currentQuestion;
 let questionIndex = 0;
 let score = 0;
+let currentIndex = 0;
+let usedIndexes = [];
+let quizQuestionNumber = 6;
 
 startQuiz.addEventListener('click', startFunc);
 playAgain.addEventListener('click', startFrame);
@@ -31,7 +34,7 @@ function startFunc() {
 }
 
 /**
- * Get first question and options
+ * Gets first question and options
  */
 function startGame() {
     let currentQuestion = q[questionIndex];
@@ -43,7 +46,7 @@ function startGame() {
  */
 function validateAnswer() {
     answer = this.innerText;
-    if (q[questionIndex].correctAnswer == answer) {
+    if (q[currentIndex].correctAnswer == answer) {
         score++;
         this.classList.add('correct');
     } else {
@@ -63,21 +66,34 @@ function displayQuestion(question) {
     optionsGet.forEach(function (element, index) {
         element.classList.remove('correct');
         element.classList.remove('incorrect');
-        element.textContent = q[questionIndex].option[index];
+        element.textContent = q[currentIndex].option[index];
         element.addEventListener('click', validateAnswer);
     });
+}
+/**
+ * Gets random qestion from q array and pushes questions that have been displayed
+ */
+function getRandomIndex() {
+    currentIndex = Math.floor(Math.random() * (q.length - 1));
+    while (usedIndexes.includes(currentIndex)) {
+        currentIndex = Math.floor(Math.random() * (q.length - 1));
+    } 
+    usedIndexes.push(currentIndex);
+    return currentIndex;
 }
 
 /**
  * Iterates q array
  */
 function nextQuestion() {
-    if (q.length > questionIndex + 1) {
+   
+    if (quizQuestionNumber > questionIndex + 1) {
         questionIndex++;
     } else {
         displayScore();
     }
-    currentQuestion = q[questionIndex];
+    currentIndex = getRandomIndex()
+    currentQuestion = q[currentIndex];
     displayQuestion(currentQuestion);
 }
 
@@ -98,6 +114,7 @@ function startFrame() {
     scoreHolder.classList.add('hidden');
     questionIndex = 0;
     score = 0;
+    usedIndexes = [];
     startGame();
 }
 
@@ -128,6 +145,65 @@ let q = [{
     },
     {
         question: 'Which golf player was called "white shark"?',
+        option: ['Gary Player', 'Greg Norman', 'Jim Furyk', 'Bernhard Langer'],
+        correctAnswer: 'Greg Norman'
+    },
+    {
+        question: 'Which English football team is called the Magpies? 2',
+        option: ['Chelsea', 'Everton', 'Newcastle', 'Stroke'],
+        correctAnswer: 'Newcastle'
+    },
+    {
+        question: 'Who was the first black tennis player to win the singles at Wimbledon? 2',
+        option: ['Arthur Ashe', 'Althea Gibson', 'James Blake', 'Venus Williams'],
+        correctAnswer: 'Althea Gibson'
+    },
+    {
+        question: 'Which year did Matthew Webb swim the English channel? 2',
+        option: ['1875', '1745', '1911', '1933'],
+        correctAnswer: '1875'
+    },
+    {   question: 'Which of the following hockey teams has not played in the NHL? 2',
+        option: ['Seattle Kraken', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
+        correctAnswer: 'Cleveland Hornets'
+    },
+    {
+        question: 'Which Formula 1 driver is the movie Rush about? 2',
+        option: ['Ayrton Senna', 'Nigel Mansell', 'Jackie Stewart', 'Niki Lauda'],
+        correctAnswer: 'Niki Lauda'
+    },
+    {
+        question: 'Which golf player was called "white shark"? 2',
+        option: ['Gary Player', 'Greg Norman', 'Jim Furyk', 'Bernhard Langer'],
+        correctAnswer: 'Greg Norman'
+    },
+    {
+        question: 'Which English football team is called the Magpies? 3',
+        option: ['Chelsea', 'Everton', 'Newcastle', 'Stroke'],
+        correctAnswer: 'Newcastle'
+    },
+    {
+        question: 'Who was the first black tennis player to win the singles at Wimbledon? 3',
+        option: ['Arthur Ashe', 'Althea Gibson', 'James Blake', 'Venus Williams'],
+        correctAnswer: 'Althea Gibson'
+    },
+    {
+        question: 'Which year did Matthew Webb swim the English channel? 3',
+        option: ['1875', '1745', '1911', '1933'],
+        correctAnswer: '1875'
+    },
+    {
+        question: 'Which of the following hockey teams has not played in the NHL? 3',
+        option: ['Seattle Kraken', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
+        correctAnswer: 'Cleveland Hornets'
+    },
+    {
+        question: 'Which Formula 1 driver is the movie Rush about? 3',
+        option: ['Ayrton Senna', 'Nigel Mansell', 'Jackie Stewart', 'Niki Lauda'],
+        correctAnswer: 'Niki Lauda'
+    },
+    {
+        question: 'Which golf player was called "white shark"? 3',
         option: ['Gary Player', 'Greg Norman', 'Jim Furyk', 'Bernhard Langer'],
         correctAnswer: 'Greg Norman'
     }
