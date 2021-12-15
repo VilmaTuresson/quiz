@@ -151,63 +151,63 @@ let q = [{
         correctAnswer: 'Greg Norman'
     },
     {
-        question: 'Which English football team is called the Magpies? 2',
-        option: ['Chelsea', 'Everton', 'Newcastle', 'Stroke'],
-        correctAnswer: 'Newcastle'
+        question: 'Which boxer is the movie Cinderella Man about?',
+        option: ['Mike Tyson', 'James Braddock', 'Marvin Dempsey', 'Jack Dempsey'],
+        correctAnswer: 'James Braddock'
     },
     {
-        question: 'Who was the first black tennis player to win the singles at Wimbledon? 2',
-        option: ['Arthur Ashe', 'Althea Gibson', 'James Blake', 'Venus Williams'],
-        correctAnswer: 'Althea Gibson'
+        question: "Who won FIFA Women's World Cup 2011 in Germany?",
+        option: ['Germany', 'Brazil', 'Japan', 'USA'],
+        correctAnswer: 'Japan'
     },
     {
-        question: 'Which year did Matthew Webb swim the English channel? 2',
-        option: ['1875', '1745', '1911', '1933'],
-        correctAnswer: '1875'
+        question: 'What year was the first handball game played?',
+        option: ['1889', '1917', '1903', '1964'],
+        correctAnswer: '1917'
     },
     {   
-        question: 'Which of the following hockey teams has not played in the NHL? 2',
-        option: ['Seattle Kraken', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
-        correctAnswer: 'Cleveland Hornets'
+        question: 'What country invented curling?',
+        option: ['Scotland', 'Canada', 'Ukraine', 'Sweden'],
+        correctAnswer: 'Scotland'
     },
     {
-        question: 'Which Formula 1 driver is the movie Rush about? 2',
-        option: ['Ayrton Senna', 'Nigel Mansell', 'Jackie Stewart', 'Niki Lauda'],
-        correctAnswer: 'Niki Lauda'
+        question: 'Which country does the alpine skier, Alberto Tomba come from?',
+        option: ['Austria', 'Italy', 'Spain', 'Croatia'],
+        correctAnswer: 'Italy'
     },
     {
-        question: 'Which golf player was called "white shark"? 2',
-        option: ['Gary Player', 'Greg Norman', 'Jim Furyk', 'Bernhard Langer'],
-        correctAnswer: 'Greg Norman'
+        question: 'When was the first world championship of figure skating held?',
+        option: ['1912', '1893', '1922', '1896'],
+        correctAnswer: '1896'
     },
     {
-        question: 'Which English football team is called the Magpies? 3',
-        option: ['Chelsea', 'Everton', 'Newcastle', 'Stroke'],
-        correctAnswer: 'Newcastle'
+        question: 'Which nation has the most Olympic gold medals in sailing?',
+        option: ['Great Britain', 'Norway', 'Poland', 'Spain'],
+        correctAnswer: 'Great Britain'
     },
     {
-        question: 'Who was the first black tennis player to win the singles at Wimbledon? 3',
-        option: ['Arthur Ashe', 'Althea Gibson', 'James Blake', 'Venus Williams'],
-        correctAnswer: 'Althea Gibson'
+        question: 'How many players are on a baseball team?',
+        option: ['12', '9', '8', '11'],
+        correctAnswer: '9'
     },
     {
-        question: 'Which year did Matthew Webb swim the English channel? 3',
-        option: ['1875', '1745', '1911', '1933'],
-        correctAnswer: '1875'
+        question: 'In professional basketball, how high is the basketball hoop from the ground?',
+        option: ['8 feet', '12 feet', '10 feet', '14 feet'],
+        correctAnswer: '10 feet'
     },
     {
-        question: 'Which of the following hockey teams has not played in the NHL? 3',
-        option: ['Seattle Kraken', 'Kansas City Scouts', 'Cleveland Hornets', 'Boston Bruins'],
-        correctAnswer: 'Cleveland Hornets'
+        question: 'How big is an Olympic sized swimming pool in meters?',
+        option: ['40', '50', '60', '80'],
+        correctAnswer: '50'
     },
     {
-        question: 'Which Formula 1 driver is the movie Rush about? 3',
-        option: ['Ayrton Senna', 'Nigel Mansell', 'Jackie Stewart', 'Niki Lauda'],
-        correctAnswer: 'Niki Lauda'
+        question: 'What year were the first modern Olympics played?',
+        option: ['1789', '1916', '1896', '1765'],
+        correctAnswer: '1896'
     },
     {
-        question: 'Which golf player was called "white shark"? 3',
-        option: ['Gary Player', 'Greg Norman', 'Jim Furyk', 'Bernhard Langer'],
-        correctAnswer: 'Greg Norman'
+        question: 'In how many seconds did Usain Bolt finish the 100-meter race in 2009?',
+        option: ['9.58', '10.24', '8.97', '8.62'],
+        correctAnswer: '9.58'
     }
 ];
