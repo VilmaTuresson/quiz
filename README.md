@@ -1,6 +1,6 @@
 # Sports Quiz
 
-This sports quiz is made to entertain. It is targeted towards anyone interested in sports! There are 18 questions in total and they are about all kinds of sport. Although only 6 questions will be played at the time, in a random order so that in the case you would want to play the quiz again there are new questions to answer. With a straightforward design and clear instructions this game is easy to run through and start over again. [Sports Quiz](https://vilmaturesson.github.io/quiz/)
+This sports quiz is made to entertain. It is targeted towards anyone interested in sports! There are 18 questions in total and they are about all kinds of sport. Although only six questions will be played at the time, in a random order so that in the case you would want to play the quiz again there are new questions to answer. With a straightforward design and clear instructions this game is easy to run through and start over again. [Sports Quiz](https://vilmaturesson.github.io/quiz/)
 
 ![responsiveness](https://user-images.githubusercontent.com/89077706/144608789-0da435dd-267c-409f-8964-8d5876afec7a.png)
 
