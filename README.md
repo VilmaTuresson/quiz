@@ -1,6 +1,6 @@
 # Sports Quiz
 
-This sports quiz is made to entertain. It is targeted towards anyone interested in sports! Each question in this quiz is about a different type of sport. With a straightforward design and clear instructions this game is easy to run through and start over again. [Sports Quiz](https://vilmaturesson.github.io/quiz/)
+This sports quiz is made to entertain. It is targeted towards anyone interested in sports! There are 18 questions in total and they are about all kinds of sport. Although only 6 questions will be played at the time, in a random order so that in the case you would want to play the quiz again there are new questions to answer. With a straightforward design and clear instructions this game is easy to run through and start over again. [Sports Quiz](https://vilmaturesson.github.io/quiz/)
 
 ![responsiveness](https://user-images.githubusercontent.com/89077706/144608789-0da435dd-267c-409f-8964-8d5876afec7a.png)
 
@@ -14,13 +14,13 @@ This sports quiz is made to entertain. It is targeted towards anyone interested 
 
 **The start frame**
 
-- The start frame is opened with a small message that encourages the player to start the game and a button that will display the first question. There is also an instructions button that will send an alert giving the instructions of the game.
+- The start frame is opened with a small message that encourages the player to start the game and a button with the text 'start' that will display the first question. There is also an instructions button that will display instructions of how to start the game, how to understand whether or not the chosen answer is correct, and an encouragement to play the quiz again!
 
 ![start-frame](https://user-images.githubusercontent.com/89077706/144608819-297692cb-2e62-4457-ab3f-a2994b48b104.png)
 
 **The game**
 
-- The question is centered at the top of the game with four options for answers. The Options are styled to be similar to each other and to fit their content. All buttons will display a border when hovered over, on a computer and when clicked, on a tablet. If the user chooses a correct answer the option they clicked will display in a green background color, if the user chooses an incorrect answer that option will display in a red background color.
+- The question is centered at the top of the game with four options for answers. The Options are styled to be similar to each other and to fit their content. All buttons will display a border when hovered over, on a computer and when clicked, on a tablet. If the user chooses a correct answer the option they clicked will display in a green background color, if the user chooses an incorrect answer that option will display in a red background color. After an option is clicked a timer of one second will go off to display the next question. This is so that the user doesn't have to interact with the site to continue playing.
 
 ![game-frame](https://user-images.githubusercontent.com/89077706/144608847-fd4200f1-f6d8-4eb0-a9fc-0fa450354f92.png)
 
