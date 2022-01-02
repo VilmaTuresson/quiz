@@ -94,7 +94,7 @@ function nextQuestion() {
     } else {
         displayScore();
     }
-    currentIndex = getRandomIndex()
+    currentIndex = getRandomIndex();
     currentQuestion = q[currentIndex];
     displayQuestion(currentQuestion);
 }
@@ -116,6 +116,7 @@ function startFrame() {
     scoreHolder.classList.add('hidden');
     questionIndex = 0;
     score = 0;
+    currentIndex = 0;
     usedIndexes = [];
     startGame();
 }
