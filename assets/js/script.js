@@ -6,6 +6,7 @@ let scoreHolder = document.getElementById('score_holder');
 let startContainer = document.getElementById('start_holder');
 let scoreResult = document.getElementById('score_num');
 let playAgain = document.getElementById('again-btn');
+// TEST let disableBtn = document.getElementsByClassName('option');
 let answer;
 let currentQuestion;
 let questionIndex = 0;
@@ -17,6 +18,7 @@ const quizQuestionNumber = 6;
 startQuiz.addEventListener('click', startFunc);
 playAgain.addEventListener('click', startFrame);
 rulesBtn.addEventListener('click', showRules);
+// TEST disableBtn.addEventListener('click', DisableOptions);
 
 /**
  * Shows text with game instructions
@@ -39,6 +41,7 @@ function startFunc() {
  * Gets first question and options
  */
 function startGame() {
+    //currentIndex = getRandomIndex();
     let currentQuestion = q[questionIndex];
     displayQuestion(currentQuestion);
 }
@@ -57,6 +60,10 @@ function validateAnswer() {
     setTimeout(nextQuestion, 1000);
 }
 
+/* TEST function DisableOptions() {
+    disableBtn.disabled = true
+} */
+
 /**
  * Gets new the question and corresponding options
  */
@@ -71,6 +78,7 @@ function displayQuestion(question) {
         element.textContent = q[currentIndex].option[index];
         element.addEventListener('click', validateAnswer);
     });
+    // TEST disableBtn.disabled = false
 }
 /**
  * Gets random qestion from q array and pushes questions that have been displayed
