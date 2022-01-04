@@ -6,7 +6,6 @@ let scoreHolder = document.getElementById('score_holder');
 let startContainer = document.getElementById('start_holder');
 let scoreResult = document.getElementById('score_num');
 let playAgain = document.getElementById('again-btn');
-// TEST let disableBtn = document.getElementsByClassName('option');
 let answer;
 let currentQuestion;
 let questionIndex = 0;
@@ -14,11 +13,11 @@ let score = 0;
 let currentIndex = 0;
 let usedIndexes = [];
 const quizQuestionNumber = 6;
+let block_asnwers = false;
 
 startQuiz.addEventListener('click', startFunc);
 playAgain.addEventListener('click', startFrame);
 rulesBtn.addEventListener('click', showRules);
-// TEST disableBtn.addEventListener('click', DisableOptions);
 
 /**
  * Shows text with game instructions
@@ -41,8 +40,8 @@ function startFunc() {
  * Gets first question and options
  */
 function startGame() {
-    //currentIndex = getRandomIndex();
-    let currentQuestion = q[questionIndex];
+    currentIndex = getRandomIndex();
+    let currentQuestion = q[currentIndex];
     displayQuestion(currentQuestion);
 }
 
@@ -50,19 +49,18 @@ function startGame() {
  * Checks answer, gives feedback, add score if correct, and sets next question
  */
 function validateAnswer() {
-    answer = this.innerText;
-    if (q[currentIndex].correctAnswer == answer) {
-        score++;
-        this.classList.add('correct');
-    } else {
-        this.classList.add('incorrect');
+    if (block_asnwers === false){
+        block_asnwers = true;
+        answer = this.innerText;
+        if (q[currentIndex].correctAnswer == answer) {
+            score++;
+            this.classList.add('correct');
+        } else {
+            this.classList.add('incorrect');
+        }
+        setTimeout(nextQuestion, 1000);
     }
-    setTimeout(nextQuestion, 1000);
 }
-
-/* TEST function DisableOptions() {
-    disableBtn.disabled = true
-} */
 
 /**
  * Gets new the question and corresponding options
@@ -78,7 +76,6 @@ function displayQuestion(question) {
         element.textContent = q[currentIndex].option[index];
         element.addEventListener('click', validateAnswer);
     });
-    // TEST disableBtn.disabled = false
 }
 /**
  * Gets random qestion from q array and pushes questions that have been displayed
@@ -96,7 +93,7 @@ function getRandomIndex() {
  * Iterates q array
  */
 function nextQuestion() {
-   
+    
     if (quizQuestionNumber > questionIndex + 1) {
         questionIndex++;
     } else {
@@ -104,6 +101,7 @@ function nextQuestion() {
     }
     currentIndex = getRandomIndex();
     currentQuestion = q[currentIndex];
+    block_asnwers = false;
     displayQuestion(currentQuestion);
 }
 
