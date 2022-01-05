@@ -34,16 +34,16 @@ When the last question is answered feedback will be presented. It will state how
 
 The site works as expected when tested on diffrent browsers (chrome, firefox, safari) and is fully responsive.
 
-- Javascript
+# Javascript
 
 No errors or warning were returned when passing through the JShint validator.
 
-- HTML
+# HTML
 
 No errors or warning were returned when passing through the official W3C validator
 [HTML Validator Result](https://validator.w3.org/nu/?doc=https%3A%2F%2Fvilmaturesson.github.io%2Fquiz%2F)
 
-- CSS
+# CSS
 
 No errors or warning were returned when passing through the official (Jigsaw) Validator
 [CSS Validator Result](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fvilmaturesson.github.io%2Fquiz%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=sv9)
