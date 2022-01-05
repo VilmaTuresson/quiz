@@ -117,6 +117,16 @@ As a returning visitor I want…
 - To play the game but still be offered a challenge. 
 - To be familiar with the layout.
 
+### Design
+
+#### Color Scheme 
+
+I have choosen a few similar shades of blue to create a clear playground that has no distactions. The text is in a standard black color and the buttons which to be clicked in the game are dislayed in classic red and green color.
+#### Typography 
+
+I choose the outfit font from [Google Fonts](https://fonts.google.com/) with good readability and a playfull look.
+
+
 ## Credits
 
 **Content**
