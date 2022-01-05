@@ -99,6 +99,23 @@ $ git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY
 
 Click [Here](https://help.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop) to retrieve pictures for some of the buttons and more detailed explanations of the above process.
 
+## UX
+
+### User Stories 
+
+#### First Time Visitor Goals
+
+As a first time visitor I want…
+- To easily understand how the game works and how to start it.
+- To play through the game without disturbances and with clear feedback. 
+- A clear display of my score. 
+- To easily re-start the game.
+
+#### Returning Visitor Goals
+
+As a returning visitor I want…
+- To play the game but still be offered a challenge. 
+- To be familiar with the layout.
 
 ## Credits
 
